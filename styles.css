@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(216, 216, 216);
+
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #212121;
+}
+/*Ultilities*/
+
+.lable {
+  font-size: 50px;
+  font-weight: bold;
+  border: white solid;
+
+  border-width: 0px 0px 1px 0px;
+}
+
+/*Show case*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 5px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #212121ec;
+}
+header p {
+  margin-left: 20px;
+  background: #fff;
+  color: #212121;
+  padding: 2px 8px 2px 8px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header .resume {
+  padding: 20px;
+  color: coral;
+}
+nav {
+  display: flex;
+  padding: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #212121;
+  padding: 10px;
+}
+nav ol {
+  font-size: 20px;
+  margin: 0px 5px 0px 5px;
+  font-weight: bold;
+  padding: 1px 5px 2px 5px;
+  text-decoration: none;
+  border: solid 0;
+  border-width: 0 0 2px 0;
+  border-color: transparent;
+  transition: border-color 0.3s;
+}
+nav ol:hover {
+  font-weight: bold;
+  padding: 1px 5x 2px 5px;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #fff;
+}
+#showcase {
+  width: 100%;
+  height: 100vh;
+}
+#showcase .contain {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(imgs/bg-keyboard.png) fixed;
+  filter: blur(5px);
+  background-size: cover;
+}
+#showcase .container {
+  padding: 4rem 0;
+  width: 35%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+#showcase p {
+  font-weight: 100;
+  font-size: 60px;
+  border-bottom: 1px double #fff;
+}
+#showcase h2 {
+  padding-top: 20px;
+  font-weight: 100;
+  font-size: 27px;
+}
+#showcase h4 {
+  padding-top: 30px;
+  font-weight: 100;
+  font-size: 20px;
+}
+#showcase h4 i.fas,
+fa-phone {
+  color: #fff;
+}
+#showcase img {
+  width: 300px;
+  border-radius: 100%;
+  border: #fff solid;
+}
+#showcase .social-connection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#showcase .social-group {
+  height: 70px;
+  padding: 20px;
+}
+
+#showcase .social-icon {
+  width: 60px;
+  font-size: 0px;
+
+  border: 1px #fff solid;
+  border-radius: 50px 50px 50px 50px;
+  transition: font-size 0.3s, border-radius 0.3s;
+}
+#showcase .social-icon:hover {
+  font-size: 15px;
+  border-radius: 50px 50px 0px 0px;
+}
+
+/*About Section*/
+#about {
+  background-color: #1d1d1d;
+  padding: 4rem;
+}
+#about h4 {
+  width: fit-content;
+  transition: transform 0.5s;
+}
+#about:hover h4 {
+  transform: translateX(50%);
+}
+
+#about .container {
+  display: flex;
+  width: 70%;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, 0%);
+  padding-top: 100px;
+  text-align: center;
+}
+#about .main {
+  height: fit-content;
+  border: #fff solid 2px;
+  border-radius: 15px;
+  background-color: #212121;
+  flex: 1;
+  padding: 20px;
+  transition: transform 1s, filter 1s;
+}
+#about .main:hover {
+  transform: translateY(-5%);
+  filter: drop-shadow(0px 4px 4px #fff);
+}
+#about .avatar {
+  flex: 1;
+}
+#about .avatar img {
+  width: 75%;
+  border-radius: 20px;
+  border: #fff solid 1px;
+  padding: 5px;
+}
+
+#about p {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+/*Skill*/
+#skill {
+  height: 100%;
+  padding: 4rem;
+}
+#skill h4 {
+  width: fit-content;
+  transition: transform 0.5s;
+}
+#skill:hover h4 {
+  transform: translateX(50%);
+}
+#skill .container {
+  padding-top: 50px;
+}
+#skill .skill-list {
+  flex-wrap: wrap;
+
+  border-radius: 15px;
+  padding: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  position: relative;
+
+  justify-content: space-between;
+}
+#skill .skill-area {
+  padding: 10px;
+
+  justify-content: center;
+}
+#skill .title {
+  text-align: center;
+  font-weight: 400;
+}
+#skill .detail-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#skill p {
+  font-size: 30px;
+  font-weight: bold;
+}
+#skill ol {
+  display: flex;
+  border: #fff 1px solid;
+  border-radius: 15px;
+  list-style: none;
+  padding: 10px;
+  font-size: 22px;
+  margin: 10px;
+  width: fit-content;
+}
+#skill ol img {
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  transition: width 0.3s, height 0.3s;
+}
+#skill ol:hover img {
+  width: 27px;
+  height: 27px;
+}
+/* Project Area*/
+#project {
+  background-color: #1d1d1d;
+  height: 100%;
+  padding: 4rem;
+}
+#project h4 {
+  width: fit-content;
+  transition: transform 0.5s;
+}
+#project:hover h4 {
+  transform: translateX(50%);
+}
+#project h3 {
+  font-weight: 100;
+}
+#project .container {
+  margin: auto;
+  padding-top: 50px;
+  width: 60%;
+}
+#project .project-container {
+  display: flex;
+  border: #fff 1px solid;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+#project .left {
+  width: 400px;
+  border: #fff solid;
+  border-width: 0px 1px 0px 0px;
+}
+#project .right {
+  width: 100%;
+  padding-left: 10px;
+}
+#project li {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+#project .label {
+  font-weight: bold;
+}
+/*FontAwesome*/
+i.fas,
+.fa-download {
+  font-size: 20px;
+
+  color: coral;
+}
+
+.fa-facebook-f {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
+
+.fa-github {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
+.fa-linkedin-in {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 15px;
+}
+@media screen and (max-width: 1204px) {
+  #about {
+    height: 100%;
+  }
+  #about .container {
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 100%;
+  }
+  /*Skill area*/
+  #skill .skill-list {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /*Project Area*/
+  #project .container {
+    margin: auto;
+    padding-top: 50px;
+    width: 100%;
+  }
+  #project .project-container {
+    flex-direction: column;
+    border: #fff 1px solid;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  #project .left {
+    border: #fff solid;
+    border-width: 0px 0px 1px 0px;
+    width: fit-content;
+  }
+}
