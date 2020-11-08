@@ -95,7 +95,7 @@ nav ol:hover {
 }
 #showcase .container {
   padding: 4rem 0;
-  width: 35%;
+  width: 50%;
   text-align: center;
   top: 50%;
   left: 50%;
@@ -105,7 +105,8 @@ nav ol:hover {
 #showcase p {
   font-weight: 100;
   font-size: 60px;
-  border-bottom: 1px double #fff;
+
+  text-decoration: underline;
 }
 #showcase h2 {
   padding-top: 20px;
@@ -365,5 +366,178 @@ i.fas,
     border: #fff solid;
     border-width: 0px 0px 1px 0px;
     width: fit-content;
+  }
+}
+@media screen and (max-width: 640px) {
+  #showcase .container {
+    padding: 4rem 0;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+  #showcase p {
+    font-weight: 100;
+    font-size: 35px;
+
+    text-decoration: underline;
+  }
+  #showcase h2 {
+    padding-top: 20px;
+    font-weight: 100;
+    font-size: 27px;
+  }
+  #showcase h4 {
+    padding-top: 30px;
+    font-weight: 100;
+    font-size: 20px;
+  }
+  #showcase h4 i.fas,
+  fa-phone {
+    color: #fff;
+  }
+  #showcase img {
+    width: 300px;
+    border-radius: 100%;
+    border: #fff solid;
+  }
+  #showcase .social-connection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #showcase .social-group {
+    height: 70px;
+    padding: 20px;
+  }
+
+  #showcase .social-icon {
+    width: 60px;
+    font-size: 0px;
+
+    border: 1px #fff solid;
+    border-radius: 50px 50px 50px 50px;
+    transition: font-size 0.3s, border-radius 0.3s;
+  }
+  #showcase .social-icon:hover {
+    font-size: 15px;
+    border-radius: 50px 50px 0px 0px;
+  }
+
+  /*About Section*/
+  #about {
+    background-color: #1d1d1d;
+    padding: 0rem;
+  }
+  #about h4 {
+    width: fit-content;
+    transition: transform 0.5s;
+    font-size: 30px;
+  }
+  #about:hover h4 {
+    transform: translateX(10%);
+  }
+
+  #about .container {
+    display: flex;
+    width: 100%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0%);
+    padding-top: 30px;
+    text-align: center;
+  }
+  #about .main {
+    height: fit-content;
+    border: #fff solid 0px;
+    border-radius: 15px;
+    background-color: #212121;
+    flex: 1;
+    padding: 20px;
+    transition: transform 1s, filter 1s;
+    text-align: left;
+  }
+  #about .main:hover {
+    transform: translateY(-5%);
+    filter: drop-shadow(0px 4px 4px #fff);
+  }
+  #about .avatar {
+    flex: 1;
+  }
+  #about .avatar img {
+    width: 75%;
+    border-radius: 100%;
+    border: #fff solid 0px;
+  }
+
+  #about p {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  /*Skill*/
+  #skill {
+    height: 100%;
+    padding: 0rem;
+  }
+  #skill h4 {
+    width: fit-content;
+    transition: transform 0.5s;
+    font-size: 30px;
+  }
+  #skill:hover h4 {
+    transform: translateX(50%);
+  }
+  #skill .container {
+    padding-top: 0px;
+  }
+  #skill .skill-list {
+    flex-wrap: wrap;
+
+    border-radius: 15px;
+    padding: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+
+    justify-content: space-between;
+  }
+  #skill .skill-area {
+    justify-content: center;
+  }
+  #skill .title {
+    text-align: left;
+    font-weight: bold;
+  }
+  #skill .detail-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+  }
+  #skill p {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #skill ol {
+    display: flex;
+    border: #fff 1px solid;
+    border-radius: 15px;
+    list-style: none;
+    padding: 5px;
+    font-size: 15px;
+    margin: 2px;
+
+    width: fit-content;
+  }
+  #skill ol img {
+    justify-content: center;
+    width: 23px;
+    height: 23px;
+    transition: width 0.3s, height 0.3s;
+  }
+  #skill ol:hover img {
+    width: 27px;
+    height: 27px;
   }
 }
