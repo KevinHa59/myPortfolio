@@ -71,6 +71,12 @@ body {
   color: #212121;
   transition: 0.5s;
 }
+#nav-bar .resume {
+  color: rgb(255, 129, 27);
+}
+#nav-bar .resume:hover {
+  font-weight: bold;
+}
 .checkbtn {
   font-size: 20px;
   font-weight: bold;
